@@ -23,7 +23,6 @@ export const useShadersHardcoded = (options: { balls: number; color: [] }) => {
     uniform float ys[BALLS];
     uniform float rs[BALLS];
     uniform vec4 ballColors[BALLS]; // Add this line to define colors for each ball
-    // vec4 ballColors[BALLS] = [vec4(1.0, 0.0, 0.0, 1.0),vec4(1.0, 0.0, 0.0, 1.0,vec4(1.0, 0.0, 0.0, 1.0,vec4(1.0, 0.0, 0.0, 1.0,vec4(1.0, 0.0, 0.0, 1.0,vec4(1.0, 0.0, 0.0, 1.0,vec4(1.0, 0.0, 0.0, 1.0,vec4(1.0, 0.0, 0.0, 1.0]; // Red ball (default
     uniform vec4 test;
     uniform vec4 testArray[2];
     uniform float height;
@@ -39,13 +38,6 @@ export const useShadersHardcoded = (options: { balls: number; color: [] }) => {
 
         vec4 color = vec4(0.0); // Initialize the color as transparent or background color
         float totalInfluence = 0.0;
-
-        //rgba(31, 97, 0, 1)
-        //rgba(62, 193, 1, 1)
-        // colorArray[0] = vec4(62./255., 193./255., 1./255., 1.0); 
-        // colorArray[0] = vec4(62./255., 193./255., 1./255., 1.0); 
-        // colorArray[0] = vec4(31./255., 97./255., 0./255., 1.0);
-        // colorArray[0] = vec4(12./255., 38./255., 0./255., 1.0);
         colorArray[0] = green;
         colorArray[1] = vec4(255./255., 255./255., 255./255., 1.0);
     
